@@ -9,15 +9,12 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: read
-
     steps:
-      - name: Récupérer le projet
+      - name: Recuperer le projet
         uses: actions/checkout@v4
 
-      - name: Déployer vers InfinityFree
-        uses: step-security/ftp-deploy-action@v4.3.6
+      - name: Deploy to InfinityFree
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
