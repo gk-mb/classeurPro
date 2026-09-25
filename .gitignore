@@ -1,6 +1,6 @@
 # CakePHP 3
 
-/vendor/*
+
 /config/app.php
 
 /tmp/cache/models/*
@@ -19,9 +19,10 @@
 
 # CakePHP 2
 
+
 /app/tmp/*
 /app/Config/core.php
 /app/Config/database.php
-/vendors/*
-/.md
-/*.txt
+
+
+jrgx5APIT89e
